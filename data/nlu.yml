@@ -1,0 +1,970 @@
+version: "2.0"
+
+nlu:
+- intent: start
+  examples: |
+    - start
+    - begin
+    - commence
+    - hurry
+    - launch
+    - initiate
+
+- intent: Feedback
+  examples: |
+    - Feedback
+    - Feedback
+    - Feedback
+    - Feed back 
+    - Feed back 
+    - I want to give feedback
+    - I would like to give feedback
+    - Can I give feedback?
+    - Is it possible to give feedback
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: find_inthe_classroom
+  examples: |
+    - In the classroom
+    - In the classroom
+    - In the classroom
+    - In the classroom
+    - In the classroom
+
+### CASE QUESTIONS ##
+
+- intent: find_dl201_m1_c1_q1
+  examples: |
+    - What is the decision of the court in Baker v. Selden regarding protecting ideas? 
+    - Can ideas get protection as per the decision in Baker v. Selden? 
+    - Whether the court in this case held that idea is protected? 
+    - Are ideas free to be copied as per the decision in this case 
+    - How did the court in Baker v. Seldon decide on copying ideas? 
+
+- intent: find_dl201_m1_c1_q2
+  examples: |
+    - What is the decision of the court in Baker v. Selden on protection of book-keeping?
+    - Whether book-keeping is protected as per the decision of this case?
+    - Is book-keeping idea or expression as per this case?
+    - Can book-keeping get protection under copyright? 
+    - What is protected in book-keeping as per the court in Baker v. Seldon? 
+
+- intent: find_dl201_m1_c1_q3
+  examples: |
+    - What is the name of the case relating to book-keeping?
+    - Is there a case on book-keeping?
+    - Can you tell the name of the case on book-keeping?
+    - Which is the case on book-keeping? 
+    - Can you give the citation of the case on book-keeping? 
+
+## MODULE 1 QUESTIONS ##
+
+- intent: find_dl201_m1_q1
+  examples: |
+    - What is intellectual property (IP)?
+    - How is intellectual property defined?
+    - What does intellectual property mean? 
+    - How can you describe intellectual property?
+    - Is intellectual property a set of exclusive legal rights?
+
+- intent: find_dl201_m1_q2
+  examples: |
+    - How does intellectual property award creativity or innovation?	
+    - How is creativity or innovation awarded through intellectual property
+    - Does the intellectual property system award innovation and creativity?
+    - How can intellectual property award creativity or innovation?
+    - In what way does intellectual property award creativity?
+
+- intent: find_dl201_m1_q3
+  examples: |
+    - What are the main areas of intellectual property rights?	
+    - Can you name the major branches of intellectual property rights?
+    - Are there any intellectual property rights branches?
+    - What areas constitute the key intellectual propery rights?
+    - Do you know the main examples of intellectual property rights?
+
+- intent: find_dl201_m1_q4
+  examples: |
+    - What are the fields of industrial property under the Trade-Related Aspects of Intellectual Property Rights (TRIPS) Agreement
+    - Can you mention the branches of industrial property under the TRIPS Agreement?
+    - Which areas of industrial property are recognized by the TRIPS Agreement?
+    - Do you know the examples of industrial property under the TRIPS Agreement?
+    - What are the main elements of industrial property under the TRIPS Agreement?
+
+- intent: find_dl201_m1_q5
+  examples: |
+    - What is the main purpose of copyright?	
+    - Do you know the aim of copyright? 
+    - Can you explain the role of copyright?
+    - How do you understand the primary objective of copyright?
+    - Does copyright protect related rights?
+
+- intent: find_dl201_m1_q6
+  examples: |
+    - Who are the key players in related rights?	
+    - Can you identify the main players in related rights? 
+    - Who are the beneficiaries of related rights?
+    - Can you mention the related rights beneficiaries?
+    - Who are considered as owners of related rights?
+
+- intent: find_dl201_m1_q7
+  examples: |
+    - What does copyright protect?	
+    - What is the subject matter for copyright protection?
+    - What objects are protected by copyright?
+    - Which type of creations are protected by copyright?
+    - Can you mention the works that are protected by copyright? 
+
+- intent: find_dl201_m1_q8
+  examples: |
+    - Which article under the Berne Convention lists protected works?	
+    - Can you name the article that lists protected works by the Berne Convention?
+    - Which article provides a list of protected works under the Berne Convention?
+    - Does the Berne Convention provide a list of protected works? 
+    - Is there a specific article that lists protected works under the Berne Convention?
+
+- intent: find_dl201_m1_q9
+  examples: |
+    - Does copyright protect ideas?	
+    - Is it possible to protect ideas under copyright?
+    - Are ideas excluded from copyright protection? 
+    - Can one protect ideas under copyright?
+    - Do ideas have to be protected by copyright?
+
+- intent: find_dl201_m1_q10
+  examples: |
+    - What is the main requirement for copyright protection under national law?	
+    - What is considered the main requirement for copyright protection? 
+    - Can you explain the essential requirement for copyright protection?
+    - Does national law prescribe a requirement for copyright protection?
+    - Is there a main requirement for copyright protection under the national law?
+
+- intent: find_dl201_m1_q11
+  examples: |
+    - What are the other requirements for copyright protection under national law other than originality?	
+    - Can you mention other requirements for copyright protection other than originality?
+    - Are there other requirements for copyright protection under national laws in addition to originality?
+    - Do national laws presecribe other requirements for copyright protection ?
+    - Is originality the only requirement for copyright protection  precribed under the national laws?
+
+- intent: find_dl201_m1_q12
+  examples: |
+    - Are there formalities for copyright protection under the Berne Convention?	
+    - Does the Berne Convention prescribe formalities for copyright protection?
+    - Are there perceived formalities for copyright protection under the Berne Convention? 
+    - Are fomalities required for copyright protection under the Berne Convention?
+    - What formalities are required for copyright protection under the Berne Convention?
+
+- intent: find_dl201_m1_q13
+  examples: |
+    - Does Copyright allow transfer of rights to another person?	
+    - Can rights be transferred under copyright?
+    - Is it possible to transfer rights to another person under copyright?
+    - Can the owner of rights transfer their rights under copyright?
+    - Are rights under copyright transferable?
+
+- intent: find_dl201_m1_q14
+  examples: |
+    - What is exhaustion of rights?	
+    - How do you explain of exhaustion of rights?
+    - Is there a definition for exhaustion of rights?
+    - How is exhaustion of rights defined?
+    - Can you describe exhaustion of rights?
+
+- intent: find_dl201_m1_q15
+  examples: |
+    - Can you identify rights granted to authors?	
+    - What are the rights granted to the authors?
+    - Mention the rights granted to the authors
+    - What righs does copyright grant to authors?
+    - State the rights granted to authors by copyright
+
+- intent: find_dl201_m1_q16
+  examples: |
+    - What are related rights?	
+    - Can you explain what related rights are?
+    - How do you define related rights ?
+    - What are considered as related rights ?
+    - What is defined as related rights?
+
+- intent: find_dl201_m1_q17
+  examples: |
+    - What is the purpose of related rights?	
+    - Can you explain the main reason for related rights?
+    - How is the aim of related rigfhts explained?
+    - What can you define as the main role of related rights?
+    - Is there a particular objective for related rights?
+
+- intent: find_dl201_m1_q18
+  examples: |
+    - Is there a relationship between copyright and related rights?	
+    - Can you explain the relationship, if any, between copyright and related rights
+    - In what way is copyright related to related rights?
+    - Is there a difference between copyright and related rights?
+    - Do copyright and related rights relate to each other?
+
+- intent: find_dl201_m1_q19
+  examples: |
+    - What is industrial property?	
+    - How do you define industrial property?
+    - Do you know the definition of industrial property?
+    - Can you explain what industrial property is?
+    - What do you understand by industrial property?
+
+- intent: find_dl201_m1_q20
+  examples: |
+    - What is a patent?	
+    - Do you know the definition of a patent?
+    - What do you understand by a patent?
+    - Can you define what a patent is?
+    - Explain the meaning of a patent?
+
+- intent: find_dl201_m1_q21
+  examples: |
+    - What is industrial design?	
+    - How do you define industrial design?
+    - What is your understanding of an industrial design?
+    - Please explain what an industrial design is?
+    - How is industrial design defined?
+
+- intent: find_dl201_m1_q22
+  examples: |
+    - What is a utility model?	
+    - What do you understand by the term utility model?
+    - What does utility model mean?
+    - Can you provide the meaning of a utility model?
+    - What is the definition of a utility model?
+
+- intent: find_dl201_m1_q23
+  examples: |
+    - What is a trademark?	
+    - How do you define a trademark?
+    - What is your understanding of a trademark?
+    - What does a trademark mean?
+    - Please explain  the meaning of a trademark?
+
+- intent: find_dl201_m1_q24
+  examples: |
+    - What are geographical indications?	
+    - How do you define geographical indications?
+    - Explain geographical indications in your own words
+    - What is your understanding of geographical indications?
+    - Please provide the meaning of geographical indications?
+
+- intent: find_dl201_m1_q25
+  examples: |
+    - Can you explain what trade secrets are?	
+    - How is a trade secret defined?
+    - What is your understanding of trade secrets?
+    - How do you define trade secrets?
+    - What does trade secret mean?
+
+- intent: find_dl201_m1_q26
+  examples: |
+    - What are plant varieties?	
+    - How do you define plant varieties?
+    - What does plant varieties mean?
+    - What is the definition of plant varieties?
+    - Can you explain the meaning of plant varieties?
+
+- intent: find_dl201_m1_q27
+  examples: |
+    - What is protection against unfair competition?	
+    - What is your understanding of protection against unfair competition?
+    - How do you explain protection against unfiar competition?
+    - Can you provide the meaning of protection against unfair competition?
+    - How is protection against unfair competition defined?
+
+- intent: find_dl201_m1_q28
+  examples: |
+    - Explain the difference between copyright and related rights and industrial property.	
+    - Is there a difference between copyright and related rights and industrial property?
+    - How is copyright and related rights related to industrial property?
+    - Do  copyright and related rights relate to industrial property?
+    - Are copyright and related rights and industrial property the same?
+
+- intent: find_dl201_m1_q29
+  examples: |
+    - How is copyright different from patents?	
+    - Is there a difference, if any, between copyright and patents?
+    - Explain the difference between copyright and patents?
+    - Are copyright  and patents related to each other?
+    - Does copyright relate to a patent?
+
+- intent: find_dl201_m1_q30
+  examples: |
+    - What is the meaning of originality?	
+    - Is there a definition of originality?
+    - What do you mean by originality?
+    - Can you explain the concept  of originality?
+    - Please state what the concept of originallity is.
+
+- intent: find_dl201_m1_q31
+  examples: |
+    - What are moral rights under copyright?	
+    - Is there a definition of moral rights under copyright?
+    - Are moral rights defined under copyright?
+    - Can you explain what moral rights are under copyright?
+    - What do you understand by moral rights?
+
+- intent: find_dl201_m1_q32
+  examples: |
+    - Which is the oldest multilateral agreement in intellectual property protection?	
+    - Name the oldest multilateral treaty in intellectual property protection
+    - Is there an oldest multilateral treaty, if any, in intellectual property protection?
+    - Is intellectual property protected by an oldest treaty?
+    - Do oldest treaties exist in intellectual property protection?
+
+- intent: find_dl201_m1_q33
+  examples: |
+    - Which first treaty granted exclusive rights to performers?	
+    - Name the first treaty which gave exclusive rights to performers
+    - Is there a treaty which first conferred eclusive rights to performers?
+    - Exclusive rights of performers were first granted by which treaty?
+    - Do you know the first treaty to grant exclusive rights to  performers?
+
+- intent: find_dl201_m1_q34
+  examples: |
+    - Which treaties grant moral rights to performers?	
+    - Name the treaties which grant moral rights to performers 
+    - Are there  treaties, if any, which grant moral rights to performers?
+    - Moral rights of performers are granted by which treaties?
+    - Do you know the treaties that grant moral rights to the performers?
+
+- intent: find_dl201_m1_q35
+  examples: |
+    - Which treaty grants exclusive rights to performers in the audivosual industry?	
+    - Do you know any  treaty which gives exclusive rights to perforrmers in the audiovisual industry?
+    - Name the treaty that grants exclusive rights to performers  in the audiovoisual industry
+    - Exclusive rights to performers in the audiovosual industry are granted by which treaty?
+    - Is there a treaty that confers exclusive rights to performers in the audiovisual industry?.
+
+- intent: find_dl201_m1_q36
+  examples: |
+    - What are the basic principles under the Berne Convention?	
+    - Mention the basic principles under the Berne Convention
+    - Do you know any basic principles under the Berne Coinvention?
+    - Does the Berne Convention define any basic principles?
+    - Are there basic principles under the Berne Convention?
+
+- intent: find_dl201_m1_q37
+  examples: |
+    - What is the National Treatment principle?	
+    - How do you define national treatment principle?
+    - Can you explain what the national treatment principle is?
+    - How is the national treatment principle defined?
+    - Is there a definition of national treatment principle anywhere?
+
+- intent: find_dl201_m1_q38
+  examples: |
+    - Can you explain the meaning of automatic protection?
+    - Is there a definition for automatic protection?
+    - What does automatic protection mean?
+    - What do you understand by automatic protection?
+    - Please elaborate what automatic protection entails.
+
+- intent: find_dl201_m1_q39
+  examples: |
+    - What does independence of protection mean?	
+    - What is the meaning of indendepence of protection?
+    - Is independence of protection defined anywhere in the Berne Convention?
+    - Can you provide a definition of the term independence of protection?
+    - Is there a definition of independence of protection in the Berne Convention?
+
+- intent: find_dl201_m1_q40
+  examples: |
+    - What is the difference between Most Favoured Nation (MFN) and National Treatment?	
+    - Explain the difference between Most Favoured Nation and National Treatments
+    - Are Most Favoured Nation and National Treatment the same?
+    - How do the Most Favoured Nation and the National Treatment Principles relate to each other?
+    - Is there a relationship between the Most Favoured Nation and the National Treatment principles?
+
+- intent: find_dl201_m1_q41
+  examples: |
+    - What is the minimum term of copyright protection?	
+    - What is set as the minimun term of protection of copyright?
+    - What is determined as the minimum term of copyright protectiont?
+    - For how long can copyright be protected?
+    - Please provide the minimum duration of copyright protection?
+
+- intent: find_dl201_m1_q42
+  examples: |
+    - How does the Berne Convention define the three-step-test?	
+    - How  is the three-step-test defined under the Berne Convention?
+    - Can you explain the three-step-test as defined under the Berne Convention?
+    - Is the three-step-test defined under the Berne Convention?
+    - Has the Berne Convention provided the meaning of the three-step-test?
+
+- intent: find_dl201_m1_q43
+  examples: |
+    - What is the difference between the three-step-test under the Berne Convention and the TRIPS Agreement?
+    - Identify the difference between the three-step-test under the Berne Convention and the TRIPS Agreement
+    - Is the three-step-test under the Berne Convention  the same as that under the TRIPS Agreement?
+    - Can you point out the difference between the three-step-test under the Berne and the TRIPS Agreement?
+    - Mention the similarities between the three-step-test under the Berne and the TRIPS Agreement.
+
+- intent: find_dl201_m1_q44
+  examples: |
+    - What is the purpose of the three-step-test?	
+    - What is the function of the three-step-test?
+    - Do you think the three-step-test is paramount to copyright ?
+    - Is the three-step-test significant to copyright?
+    - How is the three-step-test important to copyright?
+
+- intent: find_dl201_m1_q45
+  examples: |
+    - What is the duration for related rights??	
+    - Are related rights protected infinitely?
+    - Is there a defined term of protection for related rights?
+    - What is the term of protection for related rights?
+    - For how long does related rights protection last?
+
+- intent: find_dl201_m1_q46
+  examples: |
+
+    - Which Berne principles are applied in the WIPO Performances and Phnograms Treaty (WPPT)?	
+    - Can you identify the Berne principles that are applied in the WPPT?
+    - Are the Berne Principles also applied in the WPPT?
+    - Does the WPPT also apply the Berne Principles?
+    - Is there a way that the Berne Principles have been applied in the WPPT?
+
+- intent: find_dl201_m1_q47
+  examples: |
+    - Who is the first owner of copyright in a work?	
+    - Is there a particular person identified as the fiirst owner of copyright in a work?
+    - Who is granted first ownership of copyright in a work?
+    - Can you name the first owner of copyright in a work?
+    - Who is confered with first ownership of copyright in a work?
+
+- intent: find_dl201_m1_q48
+  examples: |
+    - What is the difference between an assignment and licensing of copyright?	
+    - How is an assignment different from licensing of copyright?
+    - Is an assignment the same as licensing of copyright?
+    - Are assignment and licensing of copyright one and the same?
+    - Can you identify the difference between an assignment and licensing of copyright?
+
+- intent: find_dl201_m1_q49
+  examples: |
+    - What is the purpose of limitations and exceptions to copyright and related rights?	
+    - What is the aim of limitations and exceptions to copyright and related rights?
+    - Are limitations and exceptions to copyright and related rights important?
+    - How do you explain the significance of limitations and exceptions to copyright and related rights?
+    - Please state the role of limitations and exceptions to copyright and related rights.
+
+- intent: find_dl201_m1_q50
+  examples: |
+    - What are limitations and exceptions to copyright and related rights?	
+    - Are limitations and exceptions to copyright and related rights defined?
+    - How are limitations and exceptions to copyright and related rights decribed?
+    - Is there a definition of limitations and exceptions to copyright and related rights?
+    - Do you know what  limitations and exceptions to copyright and related rights are?
+
+- intent: find_dl201_m1_q51
+  examples: |
+    - What is  public domain in copyright?	
+    - Is public domain in copyright defined?
+    - What does public domain in copyright mean?
+    - Is  public domain recognised in copyright?
+    - How do you explain public domain in copyright?
+
+- intent: find_dl201_m1_q52
+  examples: |
+    - What is the significance of public domain in copyright?	
+    - How is  public domain important  to copyright?
+    -  Why is the public domain fundamental in copyright?
+    - What is the aim of public domain in copyright?
+    - Is it important to recognise public domain under copyright?
+
+- intent: find_dl201_m1_q53
+  examples: |
+    - How does copyright differ from public domain?	
+    - Is there a difference between copyright and public domain?
+    - Does  copyright relate to public domain?
+    - Is copyright different from public domain?
+    - Are copyright and public domain the samet?
+
+- intent: find_dl201_m1_q54
+  examples: |
+    - How does a work fall into the public domain?	
+    - Describe the means by which a work  falls into the public domain?
+    - Can you state ways in which a work falls into the public domain?
+    - Is there a way that makes a work to fall into the public domain?
+    - What makes a work fall into the public domain?
+
+- intent: find_dl201_m1_q55
+  examples: |
+    - What is a work in the public domain?'
+    - What does it mean 'a work to be in the public domain?'
+    - How do you explain the meaning of 'a work in the public domain'?
+    - What does the expression 'a work in the public domain' imply?
+    - Is there an explanation for the expression 'a work in the public domain'?
+
+- intent: find_dl201_m1_q56
+  examples: |
+    - What is voluntary relinquishment in copyright?	
+    - What is the meaning of voluntary relinquishment in copyright?
+    - How is voluntary relinquishment in copyright defined?
+    - Is there an explanation for voluntary relinquishment in copyright?
+    - What does voluntary relinquishment in copyright imply?
+
+- intent: find_dl201_m1_q57
+  examples: |
+    - Can works published on the internet be freely used?	
+    - Can works published on the internet freely be freely used?
+    - Can one freely use works published on the internet?
+    - Is it allowed to freely use works published on the internet?
+    - Do you think works published on the internet are free for use by the public?
+
+- intent: find_dl201_m1_q58
+  examples: |
+    - To what extent does copyright law protect non-literal elements of software?	
+    - Are the non-literal elements of software protected by copyright law?
+    - Is it possible for the non-literal elements of software to be protected by copyright law?
+    - Does copyright law give protection to the non-literal elements of software?
+    - Would copyright law grant protection to the non-literal elements of software?
+
+- intent: find_dl201_m1_q59
+  examples: |
+    - What is fair use?	
+    - Is fair use defined under national laws?
+    - How is fair use explained in national laws?
+    - Do national laws define the fair use concept?
+    - Is there a description of fair use in national laws?
+
+- intent: find_dl201_m1_q60
+  examples: |
+    - What is the difference between 'Fair Use' and 'Fair Dealing?'	
+    - How do you explain the difference between Fair Use and Fair Dealing?
+    - How does Fair Use relate to Fair Dealing?
+    - Is Fair Use the same as Fair Dealing?
+    - Can you state the difference, if any,  between Fair Use and Fair Dealing?
+
+- intent: find_dl201_m1_q61
+  examples: |
+    - How does fair dealing relate to Copyright?	
+    - Is there a relationship between fair dealing and copyright?
+    - What is the difference between fair dealing and copyright?
+    - How do you explain similarities between fair dealing and copyright?
+    - Is fair dealing the same as copyright?
+
+- intent: find_dl201_m1_q62
+  examples: |
+    - What is the difference between author and copyright owner?
+    - How does an author differ from a copyright owner?
+    - Is there a difference between the author and copyright owner?
+    - Is the author the same person as the copyright owner?
+    - Can you explain the difference between the author and copyright owner?
+
+- intent: find_dl201_m1_q63
+  examples: |
+    - Does ownership of a physical copy of a work mean owning the rights in the work?	
+    - Does owning a tangible work give the possesor copyright?
+    - Would you say that owning a copyright material is the same as owning the rights in the work?
+    - Is ownership of a solid work distinct from owning the rights in the work?
+    - What is the difference between owning a tangible work and owning the rights?
+
+- intent: find_dl201_m1_q64
+  examples: |
+    - Which treaty was the first to recognize related rights?	
+    - Related rights were first recognized by which treaty?
+    - Do you know the treaty that first introduced related rights?
+    - Which treaty is considered as the first to grant related rights?
+    - Mention the name of the treaty that recogized related rights?
+
+- intent: find_dl201_m1_q65
+  examples: |
+    - When does copyright protection start?	
+    - At what point does copyrighgt protection begin?
+    - Is there a definite time for copyright protection to start?
+    - Is there a set period for copyright protection to commence?
+    - When is the copyright protection commencement period?
+
+- intent: find_dl201_m1_q66
+  examples: |
+    - What is the difference between copyright and ownership?	
+    - How different is copyright from ownership?
+    - Is copyright same as ownership?
+    - Does copyright entail ownership?
+    - Is there a difference if any between copyright and ownership?
+
+- intent: find_dl201_m1_q67
+  examples: |
+    - Does only the copyright owner have the right to use their work	
+    - Can use of a copyright work be monopolised by the copyright owner?
+    - Is the right to use a copyright work only conferred on the copyright owner?
+    - Is it possible for another person, apart from the copyright owner, to use a copyright work?
+    - Can there be a possibility for other people to use a copyright work which is owned by another person? 
+
+- intent: find_dl201_m1_q68
+  examples: |
+    - What is the name of the first Copyright Act?	
+    - Can you mention the first Copyright Act?
+    - Do you know what the first copyright statute was referred to as?
+    - What is considered the first statute in copyright?
+    - Is there a statute in copyright which is known to be the first?
+
+- intent: find_dl201_m1_q69
+  examples: |
+    - How was copyright regulated before the Statute of Anne?	
+    - Who controlled copyright before the Statute of Anne?
+    - By what means was copyright regulated before the Statute of Anne was enacted?
+    - Whose responsibility, if any, was it, prior to the Statute to Anne, to control copyright?
+    - Preceding the Statute of Anne, were there other ways of regulating copyright?
+
+- intent: find_dl201_m1_q70
+  examples: |
+    - What were the main features of the Statute of Anne?	
+    - Do you know the important elements of the Statute of Anne?
+    - What did the Statute of Anne do to owners of copyrighted works?
+    - Can you state the key provisions of the Statute of Anne?
+    - Can you mention the salient features of the Statute of Anne?
+
+- intent: find_dl201_m1_q71
+  examples: |
+    - Can you explain the difference between copyright and trademarks?	
+    - How is copyright similar to trademarks?
+    - Is there a differece between copyright and trademarks?
+    - What is the relationship between copyright and trademarks?
+    - Is copyright also a trademark?
+
+- intent: find_dl201_m1_q72
+  examples: |
+    - How is an idea related to an expression?	
+    - What is the difference between an idea and expression?
+    - Is an idea alsao an expression?
+    - How is an idea related to an expression?
+    - Can you explain the similarities, if any, between an idea and its expression?
+
+- intent: find_dl201_m1_q73
+  examples: |
+    - How are rights in a work exhausted?	
+    - Is it possible for rights in a work to be exhausted?
+    - What contributes to exhaustion of rights in a work?
+    - By what means can the rights to a work be exhausted?
+    - What are the possible ways in a which rights to a work can be exhausted?
+
+- intent: find_dl201_m1_q74
+  examples: |
+    - Can you describe the types of exhaustion of rights in copyrightt?	
+    - What are the three examples of exhaustion of rights in copyright?
+    - How do you explain the three types of exhaustion of rights in copyright?
+    - Is exhaustion of rights in copyright classified into categories?
+    - How is exhaustion of rights in copyright classified?
+
+- intent: find_dl201_m1_q75
+  examples: |
+    - What is a sui generis database right?	
+    - How is a sui generis database right defined?
+    - Can you explain what a sui generis database right stands for?
+    - What dioes sui generis database right mean?
+    - Is there a definition for a sui generis database right?
+
+- intent: find_dl201_m1_q76
+  examples: |
+    - How are non-original databases protected?	
+    - By what means are non-original databases protected?
+    - Is there protection for non-original databases?
+    - What is the method by which non-original databases can be protected?
+    - In what way can the non-original databases be protected?
+
+- intent: find_dl201_m1_q77
+  examples: |
+    - What are some of the difference between civil law and common law legal traditions in the context of copyright?
+    - Can you explain the differences, if any,  between civil law and common law legal traditions with reference to copyright?
+    - How are the civil law and common law legal traditions related to each other with specific reference to copyright? 
+    - Are there similarities between the civil law and the common law legal traditions with respect to copyright?
+    - Is the civil law legal tradition the same as the common law legal tradition in relation to copyright? 
+
+- intent: find_dl201_m1_q78
+  examples: |
+    - Which categories of rightsholders are protected by the Rome Convention of 1961?	
+    - Can you identify the rightsholders that are protected by the Rome Convention of 1961?
+    - What does the Rome Convention of 1961 protect?
+    - Who are the principal beneficiaries of the Rome Convention of 1961
+    - Does the Rome Convention of 1961 protect authors and publishers?
+
+- intent: find_dl201_m1_q79
+  examples: |
+    - Are there similarities, if any, between the author and the performer?	
+    - What is the difference between an author and a performer?
+    - How is the author related to a performer?
+    - Is there a relationship between an author and a performer?
+    - Is an author the same as a performerr?
+
+- intent: find_dl201_m1_q80
+  examples: |
+    - Which convention for copyright protection  was promoted by United Nations Educational, Scientific and Cultural Organization (UNESCO)?
+    - Can you name the Convention for copyright protection which was concluded and promoted by UNESCO?
+    - Is there a UNESCO Copyright Convention which was concluded in 1952?
+    - Was there another Convention for copyright protection after the Berne Convention concluded by UNESCO?
+    - Which other Copyright Convention was concluded by UNESCO  before the Rome Convention?
+
+- intent: find_dl201_m1_q81
+  examples: |
+    - What was the purpose of the Universal Copyright Convention (UCC)?	
+    - Do you know what the aim of the Universal Copyright Convention was?
+    - Did the Universal Copyright Convention protect both copyright and related rights?
+    - Can you explain the role of the Universal Copyright Convention?
+    - What could be described as the objective of the Universal Copyright Convention?"
+
+- intent: find_dl201_m1_q82
+  examples: |
+    - What changes did the Statute of Anne bring to the copyright industry?	
+    - Can you describe the transformation that was made to the copyright industry following the enactment of the Statute of Anne?
+    - Can you mention the contribution of the Statute of Anne to the copyright industry?
+    - What improvements to the copyright industry were made by the Statute of Anne
+    - What developments in the copyright industry were attributed to the Statute of Anne?
+
+- intent: find_dl201_m1_q83
+  examples: |
+    - Can you state the difference between civil law and common law legal traditions in protection of moral rights?
+    - How are moral rights protected in civil law and common law countries?
+    - Are moral rights protected in both civil law and common law countries?
+    - Are there similarities in the way moral rights and protected in both the civil law and common law countries?
+    - Do civil law and common law countries grant same protection to moral right?
+
+- intent: find_dl201_m1_q84
+  examples: |
+    - How does copyright relate to moral rights?	
+    - How different is copyright from moral rights?
+    - Are moral rights a subset of copyright?
+    - Can  copyright exist without moral rights?
+    - Are moral rights superior to copyright?
+
+- intent: find_dl201_m1_q85
+  examples: |
+    - What are the two categories of moral rights under the Berne Convention?	
+    - Does the Berne Convention provide classes of moral rights?
+    - Is there a classification for moral rights under the Berne Convention?
+    - Can you mention the examples of moral rights as indicated by the Berne Convention?
+    - How do you explain the types of moral rights under the Berne Convention?
+
+- intent: find_dl201_m1_q86
+  examples: |
+    - Can you name the first Treaty in the area of exceptions and limitations to copyright?	
+    - Prior to 2013 was there a treaty in the area of limitations and exceptions to copyright?
+    - What treaty is regarded as the first to establish mandatory exceptions to copyright?
+    - Is there a treaty that was concluded to address specific limitations and exceptions to copyright?
+    - Which treaty in the category of limitations and exceptions to copyright is considered to be the first?
+
+- intent: find_dl201_m1_q87
+  examples: |
+    - What is the purpose of the Marrakesh Treaty?	
+    - Why was the Marrakesh Treaty concluded?
+    - How important is the Marrakesh Treaty to the visually impaired persons?
+    - Is there a need for the Marrakesh Treaty?
+    - Can you explain the significance of the Marrakesh Treaty?
+
+- intent: find_dl201_m1_q88
+  examples: |
+    - Why is the Marrakesh Treaty a historic international agreement?	
+    - Is the Marrakesh Treaty considered a historic international  legal framework?
+    - Is the Marrakesh Treaty a significant legal instrument internationally?
+    - What makes the Marrakesh Treaty a special international agreement?
+    - Can the Marrakesh Treaty be regarded as an important international agreement?
+
+- intent: find_dl201_m1_q89
+  examples: |
+    - How does the Marrakesh Treaty change copyright?	
+    - What impact does the Marrakesh Treaty have on copyright?
+    - What is the relationship, if any, between the Marrakesh Treaty and copyright?
+    - Can you mention the relevance of the Marrakesh Treaty to copyright?
+    - Has the Marrakesh Treaty brought any changes to copyright?
+
+- intent: find_dl201_m1_q90
+  examples: |
+    - What is the WIPO Development Agenda?	
+    - Can you explain your understanding of the WIPO Development Agenda?
+    - What is the meaning of the WIPO Development Agenda?
+    - How is the WIPO Development Agenda defined?
+    - Is there a definition of the WIPO Development Agenda?
+
+- intent: find_dl201_m1_q91
+  examples: |
+    - How many Development Agenda Recommendations were made by the WIPO Member States?	
+    - Which recommendations from Member States led to the development of the Development Agenda recommendations?
+    - Can you mention the recommendations that comprise the WIPO Development Agenda?
+    - Did the WIPO Secretariat come up with a set of Development Agenda recommendations?
+    - Does the WIPO Development Agenda comprise a set of recommendations?
+
+- intent: find_dl201_m1_q92
+  examples: |
+    - Which committee of WIPO oversees the implementation of the Development Agenda?	
+    - Can you mention the relevant committee of WIPO which is mandated to monitor implementation of the Development Agenda?
+    - Is the WIPO Standing Committee on Copyright and Related Rights also responsible for the WIPO Development Agenda?
+    - Is there a specific committee of WIPO that is responsible for evaluating the Development Agenda implementation?
+    - Is execution of the Development Agenda related activities reported to a particular committee of WIPO?
+
+- intent: find_dl201_m1_q93
+  examples: |
+    - How many clusters are the recommendations of the Development Agenda divided into?	
+    - What are the clusters of the Development Agenda?
+    - Are Development Agenda recommendations implemented as one set of recommendations?
+    - Can you identify the Development Agenda clusters?
+    - Do the Development Agenda recommendations comprise  a set of clusters?
+
+- intent: find_dl201_m1_q94
+  examples: |
+    - Which WIPO Treaties are meant to provide protection to copyright and related rights in the digital environment?
+    - Which  WIPO Treaties  control exploitation of copyright and related rights in the digital environment?
+    - Are there WIPO Treaties which centre on ensuring effective protection of copyright and related rights in the digital environment 
+    - Can you name the WIPO Treaties that regulate copyright and related rights use in the digital environment?
+    - Can you identify the two WIPO Treaties which legalise use of copyright and related rights in the digital environment?
+
+- intent: find_dl201_m1_q95
+  examples: |
+    - What are the technological requirements that the Internet Treaties require contracting parties to provide in their national laws?	
+    - Can you mention the two important technical elements brought by the Internet Treaties which are mandatory for contracting parties? 
+    - In addition to the rights, what other technological areas are covered by the Internet treaties which should be provided for in the national laws of contracting parties?
+    - Which technological requirements are the focus of the Internet Treaties which should be available in national laws of contracting parties?
+    - Do the Internet Treaties require contracting parties to provide for technological requirements in their national laws?
+
+- intent: find_dl201_m1_q96
+  examples: |
+    - What is the World Intellectual Property Organization (WIPO)?
+    - Do you know what WIPO is?
+    - Can you explain your understanding of WIPO?
+    - Can you describe WIPO?
+    - Is there a definition of WIPO?
+
+- intent: find_dl201_m1_q97
+  examples: |
+    - What rights were granted to copyright owners by the Statue of Anne	
+    - Did Statute of Anne grant any rights to the copyright owners?
+    - Can you mention the rights that copyright owners were conferred with by the Statute of Anne?
+    - Were copyright owners granted rights by the Statute of Anne?
+    - Are there specific rights that the Statute of Anne gave to the owners of copyright?
+
+- intent: find_dl201_m1_q98
+  examples: |
+    - Can moral rights be transferred?	
+    - Are moral rights transferable?
+    - Are moral rights exclusive to the author?
+    - Can moral rights be waived?
+    - Can you explain if moral rights are licensed ?
+
+- intent: find_dl201_m1_q99
+  examples: |
+    - What improvements did the Statute of Anne bring to the Copyright industry?	
+    - How did the copyright industry improve with the enactment of the Statute of Anne?
+    - How effective was the Statutte of Anne to the copyright industry?
+    - Was the Statute of Anne a solution to the copyright industry?
+    - Did the Statute of Anne improved copyright protection ?
+
+- intent: find_dl201_m1_q100
+  examples: |
+    - Does copyright confer to the author absolute ownership of his creation?	
+    - Does the author have complete ownership of his creation under copyright?
+    - Is granting of rights to the author by copyright imply absolute ownership of his creation ?
+    - Is the role of copyright to grant to the author complete ownership of his creation?
+    - Is it right to say that copyright gives the author total ownership of his creation?
+
+- intent: find_dl201_m1_q101
+  examples: |
+    - Are producers of sound recordings protected by the Universal Copyright Convention?	
+    - Does the Universal Copyright Convention grant protection to the producers of sound recording? 
+    - Are producers of sound recordings recognized by the Universal Copyright Convention? 
+    - Does the Universal Copyright Convention extend protection to producers of sound recordings? 
+    - Can you explain if the Universal Copyright Convention also protected sound recording producers?
+
+- intent: find_dl201_m1_q102
+  examples: |
+    - Did the statute of Anne protect all works recognized by the Berne Convention?	
+    - Were all works protected by the Berne Convention also protected by the Statute of Anne? 
+    - Did the Statute of Anne grant protection to works protected by the Berne Convention? 
+    - Is it the same list of works protected by the Berne Convention that was also protected by the Statute of Anne? 
+    - Can you explain whether the Statute of Anne protected the same works as those protected by the Berne Convention? 
+
+- intent: find_dl201_m1_q103
+  examples: |
+    - Can you mention a case if any on the Marrakesh Treaty?	
+    - Can you identify a case on Marrakesh Treaty? 
+    - Do you know any case on the Marrakesh Treaty? 
+    - Can you find a case on the Marrakesh Treaty? 
+    - Are there cases on the Marrakesh Treaty?
+
+- intent: find_dl201_m1_q104
+  examples: |
+    - Is there a provision on Intellectual Property Rights (IPRs) in the Universal Declaration of Human Rights (UDHR)?
+    - Are IPRs also enshrined in the Universal Declaration of Human Rights?
+    - Does the Universal Declaration of Human Rights include a provision on IPRs? 
+    - Do the provisions of the Universal Declaration of Human Rights also cover IPRs? 
+    - Which provision deals with IPRs in the Universal Declaration of Human Rights?
+
+- intent: find_dl201_m1_q105
+  examples: |
+    - What are the major differences between the Berne Convention and the Universal Copyright Convention?	
+    - Can you mention the main differences between the Berne Convention and the Universal Copyright Convention?
+    - In what ways are the Berne Convention and the Universal Copyright Convention dissimilar from each other? 
+    - Does the Berne Convention differ from the the Universal Copyright Convention?
+    - Is there a distinction between the Berne Convention and the Universal Copyright Convention? 
+
+- intent: find_dl201_m1_q106
+  examples: |
+    - Which is the first patent law statute in the world?	
+    - Is there a first patent law statute in the world? 
+    - Can you name the Statute which is the first to grant patent protection?
+    - Can you identify the first statute which provided protection to patents?
+    - Was there a patent law statute prior to the Paris Convention?
+
+- intent: find_dl201_m1_q107
+  examples: |
+    - Which was the oldest grant of priviledge for copyright?	
+    - Can you name the first grant of priviledge for copyright? 
+    - Prior to the priviledges granted by the Statute of Anne was there an earlier grant of priviledge for copyright? 
+    - Do you know the oldest grant of priviledge for copyright? 
+    - Was there an oldest conferrement of priviledge for copyright? 
+
+- intent: find_dl201_m1_q108
+  examples: |
+    - Is copyright law national or international?	
+    - Can a national law protect copyright internationally? 
+    - Is copyright governed by national law or internationally? 
+    - Is copyright a matter for national law or international? 
+    - Can a national law protect copyright internationally?
+
+- intent: find_dl201_m1_q109
+  examples: |
+    - What are the major elements of copyright in Common Law tradition?	
+    - Which copyright features are considered as primary in Common Law tradition? 
+    - Can you mention the main features of copyright in Common law tradition? 
+    - Can you identify the fundamentals of copyright in Common Law tradition? 
+    - Are there key elements of copyright in Common Law tradition?
+
+- intent: find_dl201_m1_q110
+  examples: |
+    - What are the key elements of copyright in Civil law tradition?	
+    - Can you define the key features of copyright in Civil Llaw tradition? 
+    - Are there major features of copyright in Civil Law tradition? 
+    - Can you identify the main elements of copyright in Civil Law tradition? 
+    - Which copyright elements are considered as primary in Civil Law tradition? 

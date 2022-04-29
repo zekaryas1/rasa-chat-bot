@@ -1,0 +1,152 @@
+version: "2.0"
+
+rules:
+
+############################################
+##                 INTRO                  ##
+############################################
+
+- rule: chatbot utters greet message
+  steps:
+  - intent: greet
+  - action: action_find_greet_1
+  - action: action_find_greet_2   
+
+- rule: chatbot utters response for m8q1
+  steps:
+  - intent: find_dl201_m8_q1
+  - action: action_find_dl201_m8_q1
+  - action: action_find_moreinfo_buttons_cs2sr2
+
+############################################
+##           find_askquestion_cc          ##
+############################################
+
+- rule: find_askquestion_cc 1
+  steps:
+  - intent: find_askquestion_cc
+  - action: action_utter_askquestion_cc_1
+  - action: action_utter_askquestion_cc_2
+
+- rule: find_askquestion_cc 1
+  steps:
+  - intent: find_dl201_m1_q9
+  - action: action_find_dl201_m1_q9
+  - action: action_find_greet_menu
+
+############################################
+##             find_guidance_cc           ##
+############################################
+
+- rule: find_guidance_cc 1
+  steps:
+  - intent: find_guidance_cc
+  - action: action_utter_guidance_cc
+
+- rule: find_guidance_cc 2
+  steps:
+  - or: 
+    - intent: find_dl201_m1_disctopics
+    - intent: find_dl201_m2_disctopics
+    - intent: find_dl201_m3_disctopics  
+    - intent: find_dl201_m4_disctopics
+    - intent: find_dl201_m5_disctopics
+    - intent: find_dl201_m6_disctopics  
+    - intent: find_dl201_m7_disctopics
+    - intent: find_dl201_m8_disctopics
+    - intent: find_dl201_m9_disctopics  
+    - intent: find_dl201_m10_disctopics
+    - intent: find_dl201_m11_disctopics
+    - intent: find_dl201_m12_disctopics  
+    - intent: find_dl201_m13_disctopics               
+  - action: action_utter_guidance_cc_info
+
+############################################
+##           find_askquestion_cs          ##
+############################################
+
+- rule: find_askquestion_cs 1
+  steps:
+  - intent: find_askquestion_cs
+  - action: action_utter_askquestion_cs
+
+- rule: find_askquestion_cs 2
+  steps:
+  - or: 
+    - intent: find_dl201_m1_cs
+    - intent: find_dl201_m2_cs
+    - intent: find_dl201_m3_cs  
+    - intent: find_dl201_m4_cs
+    - intent: find_dl201_m5_cs
+    - intent: find_dl201_m6_cs  
+    - intent: find_dl201_m7_cs
+    - intent: find_dl201_m8_cs
+    - intent: find_dl201_m9_cs 
+    - intent: find_dl201_m10_cs
+    - intent: find_dl201_m11_cs
+    - intent: find_dl201_m12_cs 
+    - intent: find_dl201_m13_cs              
+  - action: action_utter_askquestion_cs_info
+
+- rule: Activate cs form
+  steps: 
+  - intent: find_m1_c1  
+  - action: action_utter_dl201_m1_cs_sampleqs
+  - action: cs_form
+  - active_loop: cs_form
+
+- rule: Submit cs form
+  condition:
+  - active_loop: cs_form
+  steps:
+  - action: cs_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_dl201_m1_c1_sampleqs_answer
+  - action: action_reset_all_slots
+
+############################################
+##                FEEDBACK                ##
+############################################
+
+- rule: Activate rating form
+  steps: 
+  - intent: Feedback  
+  - action: action_share_feedback_rating
+  - action: rating_form
+  - active_loop: rating_form
+
+- rule: Submit rating form
+  condition:
+  - active_loop: rating_form
+  steps:
+  - action: rating_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_share_feedback_comment
+
+- rule: exit feedback with rating but no comment
+  steps: 
+  - intent: exit_feedback_with_rating
+  - action: action_submit_feedback
+  - action: action_share_feedback_comment_result
+
+- rule: Activate form
+  steps:
+  - intent: share_comment_feedback_yes
+  - action: action_share_feedback_comment_result
+  - action: survey_form
+  - active_loop: survey_form
+
+- rule: Submit form
+  condition:
+  - active_loop: survey_form
+  steps:
+  - action: survey_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_submit_feedback
+  - action: action_share_feedback_final

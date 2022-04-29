@@ -1,0 +1,119 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+- greet_1:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- find_inthe_classroom:
+    use_entities: true
+- find_outofthe_classroom:
+    use_entities: true
+- copyright_def:
+    use_entities: true
+- folkart_def:
+    use_entities: true
+- compsoftware_copyrightable:
+    use_entities: true
+- relatedrights_def:
+    use_entities: true
+- copyright_originality:
+    use_entities: true
+- copyright_comprise:
+    use_entities: true
+- greet:
+    use_entities: true
+- find_review_material:
+    use_entities: true
+- find_copyright_originality_casestudy:
+    use_entities: true
+- start:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities: []
+slots:
+  open_feedback:
+    type: text
+    influence_conversation: true
+  open_rating:
+    type: text
+    influence_conversation: true
+  open_m1_c1:
+    type: text
+    influence_conversation: true
+responses:
+  utter_cards_carousel:
+  - text: "You can apply for below leaves"
+    custom:
+      payload: cardsCarousel
+      data:
+      - image: https://b.zmtcdn.com/data/pictures/1/17428541/da50010b1a953dfbb109306fba5a6c06.jpg
+        name: abc
+        ratings: '4.0'
+        title: pqr
+      - image: https://b.zmtcdn.com/data/pictures/1/17428541/da50010b1a953dfbb109306fba5a6c06.jpg
+        name: abc
+        ratings: '4.0'
+        title: pqr
+      - image: https://b.zmtcdn.com/data/pictures/1/17428541/da50010b1a953dfbb109306fba5a6c06.jpg
+        name: abc
+        ratings: '4.0'
+        title: pqr
+      - image: https://b.zmtcdn.com/data/pictures/1/17428541/da50010b1a953dfbb109306fba5a6c06.jpg
+        name: abc
+        ratings: '4.0'
+        title: pqr
+actions: 
+- action_find_dl201_m1_q9
+- action_reset_all_slots
+- action_utter_dl201_m1_cs_reverseqs
+- action_utter_dl201_m1_cs_sampleqs
+- action_utter_dl201_m1_c1_sampleqs_answer
+- action_utter_askquestion_cc_1
+- action_utter_askquestion_cc_2
+- action_utter_guidance_cc
+- action_utter_guidance_cc_info
+- action_utter_askquestion_cs
+- action_utter_askquestion_cs_info
+- action_submit_feedback
+- validate_survey_form
+- action_share_feedback_rating
+- action_share_feedback_comment
+- action_share_feedback_comment_result
+- action_share_feedback_final
+- action_find_greet_1
+- action_find_greet_2
+- action_find_inthe_classroom
+- action_find_dl201_m8_q1
+- action_find_dl201_m8_q1_cs
+- action_find_dl201_m8_q1_sr
+- action_find_moreinfo_buttons_cs2sr2
+- action_find_moreinfo_buttons_cs3sr2
+- action_find_moreinfo_buttons_sr2
+- action_find_moreinfo_buttons_sr3
+- action_find_moreinfo_buttons_nocssr_1
+- action_find_moreinfo_buttons_cs2sr3
+- action_find_moreinfo_buttons_cs3sr3
+- action_find_moreinfo_buttons_cs2
+- action_find_moreinfo_buttons_cs3
+- action_find_moreinfo_buttons_nocssr_2
+- action_find_moreinfo_buttons_cs3sr3_mi
+- action_find_moreinfo_buttons_cs3_mi
+- action_find_moreinfo_buttons_sr3_mi
+- action_find_greet_menu
+forms:
+  survey_form:
+    open_feedback:
+    - type: from_text
+  rating_form:
+    open_rating:
+    - type: from_text
+  cs_form:
+    open_m1_c1:
+    - type: from_text    
+e2e_actions: []
