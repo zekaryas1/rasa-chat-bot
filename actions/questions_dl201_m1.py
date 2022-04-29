@@ -50,11 +50,11 @@ class ActionFindDL201m1Q9(Action):
             "find_dl201_m1_q10": self.find_dl201_m1_q10
         }
         blockOfCode = self.dictionary.get(intent, lambda : print("the intent doesn't exist in the dictionary"))
-        blockOfCode()
+        return blockOfCode()
     
     def find_dl201_m1_q10(self):
         ## write the select statement for question 10 here
-        pass
+        return []
     
     def find_dl201_m1_q9(self):
         utter_dl201_q1 = ("SELECT answer FROM digital_tutor_chatbot WHERE intent = 'find_dl201_m1_q9'")
