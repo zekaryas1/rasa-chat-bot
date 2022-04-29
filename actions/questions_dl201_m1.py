@@ -49,7 +49,7 @@ class ActionFindDL201m1Q9(Action):
             "find_dl201_m1_q9": self.find_dl201_m1_q9,
             "find_dl201_m1_q10": self.find_dl201_m1_q10
         }
-        blockOfCode = self.dictionary[intent]
+        blockOfCode = self.dictionary.get(intent, lambda : print("the intent doesn't exist in the dictionary"))
         blockOfCode()
     
     def find_dl201_m1_q10(self):
